@@ -1,0 +1,21 @@
+# CLI Tools
+brew "git"
+brew "stow"
+brew "neovim"
+brew "fzf"
+brew "ripgrep"
+brew "fd"
+brew "tree"
+brew "htop"
+brew "jq"
+brew "curl"
+brew "wget"
+
+# Fonts
+cask "font-jetbrains-mono-nerd-font"
+cask "font-fira-code-nerd-font"
+cask "font-hack-nerd-font"
+
+# Applications
+cask "ghostty"
+cask "google-chrome"
