@@ -29,27 +29,4 @@ setup:
 # Create symlinks using Stow
 install:
 	@echo "Creating symlinks..."
-	@# Ensure target directory exists
-	@mkdir -p ~/.config
-	@# Create symlinks for ghostty and nvim directories
-	@echo "  Linking ghostty/"
-	@ln -sf "$(PWD)/ghostty" ~/.config/ghostty
-	@echo "  Linking nvim/"
-	@ln -sf "$(PWD)/nvim" ~/.config/nvim
-	@echo "Dotfiles installed successfully!"
-	@echo "Your development environment is ready!"
-
-# Remove symlinks
-uninstall:
-	@echo "Removing symlinks..."
-	@echo "  Unlinking ghostty/"
-	@rm -f ~/.config/ghostty
-	@echo "  Unlinking nvim/"
-	@rm -f ~/.config/nvim
-	@echo "Dotfiles uninstalled!"
-
-# Clean up broken symlinks
-clean:
-	@echo "Cleaning up broken symlinks..."
-	@find ~/.config -type l ! -exec test -e {} \; -exec rm {} \;
-	@echo "Cleanup complete!"
+	@stow .

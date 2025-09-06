@@ -18,9 +18,6 @@ That's it! Your development environment is ready. 🎉
 
 - `make setup` - Install Homebrew and all packages from Brewfile
 - `make install` - Create symlinks for configurations
-- `make uninstall` - Remove all symlinks
-- `make clean` - Clean up broken symlinks
-- `make help` - Show available commands
 
 ## What Gets Installed
 
