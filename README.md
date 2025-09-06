@@ -26,14 +26,10 @@ That's it! Your development environment is ready. 🎉
 
 ### Development Tools
 - **CLI Tools**: git, neovim, fzf, ripgrep, fd, tree, htop, jq, curl, wget
-- **Languages**: Node.js, Python3, Go, Rust  
-- **DevOps**: Docker, Terraform, kubectl
 
 ### Applications
 - **Terminal**: Ghostty
-- **Editor**: Visual Studio Code
-- **Browsers**: Google Chrome, Firefox
-- **Tools**: Docker Desktop, Postman, Figma, Slack, Spotify
+- **Browsers**: Google Chrome
 
 ### Fonts
 - JetBrains Mono Nerd Font
@@ -97,5 +93,4 @@ To add new applications:
 The Makefile automatically links any new directories to `~/.config/`.
 
 ## License
-
 MIT

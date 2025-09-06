@@ -14,7 +14,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
-          "tsserver",
+          "ts_ls",
           "pyright",
           "rust_analyzer",
           "gopls",
@@ -34,7 +34,7 @@ return {
       -- Setup LSP servers
       local servers = {
         "lua_ls",
-        "tsserver",
+        "ts_ls",
         "pyright",
         "rust_analyzer",
         "gopls",

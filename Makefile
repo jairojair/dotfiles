@@ -28,7 +28,7 @@ setup:
 
 # Create symlinks using Stow
 install:
-	@echo "🔗 Creating symlinks..."
+	@echo "Creating symlinks..."
 	@# Ensure target directory exists
 	@mkdir -p ~/.config
 	@# Create symlinks for ghostty and nvim directories
@@ -41,7 +41,7 @@ install:
 
 # Remove symlinks
 uninstall:
-	@echo "🗑️  Removing symlinks..."
+	@echo "Removing symlinks..."
 	@echo "  Unlinking ghostty/"
 	@rm -f ~/.config/ghostty
 	@echo "  Unlinking nvim/"
@@ -50,6 +50,6 @@ uninstall:
 
 # Clean up broken symlinks
 clean:
-	@echo "🧹 Cleaning up broken symlinks..."
+	@echo "Cleaning up broken symlinks..."
 	@find ~/.config -type l ! -exec test -e {} \; -exec rm {} \;
 	@echo "Cleanup complete!"
