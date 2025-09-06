@@ -5,9 +5,6 @@ help:
 	@echo "Available commands:"
 	@echo "  make setup    - Install dependencies (Homebrew + packages)"
 	@echo "  make install  - Create symlinks using Stow"
-	@echo "  make uninstall- Remove symlinks"
-	@echo "  make clean    - Clean up broken symlinks"
-	@echo "  make help     - Show this help message"
 
 # Install dependencies and setup environment
 setup:
