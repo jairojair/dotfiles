@@ -12,9 +12,7 @@ brew "curl"
 brew "wget"
 
 # Fonts
-cask "font-jetbrains-mono-nerd-font"
-cask "font-fira-code-nerd-font"
-cask "font-hack-nerd-font"
+cask "font-monaspace"
 
 # Applications
 cask "ghostty"

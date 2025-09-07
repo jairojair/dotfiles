@@ -3,8 +3,8 @@
 # Default target
 help:
 	@echo "Available commands:"
-	@echo "  make setup    - Install dependencies (Homebrew + packages)"
-	@echo "  make install  - Create symlinks using Stow"
+	@echo "make setup    - Install dependencies (Homebrew + packages)"
+	@echo "make install  - Create symlinks using Stow"
 
 # Install dependencies and setup environment
 setup:
