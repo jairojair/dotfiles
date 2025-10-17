@@ -26,4 +26,5 @@ setup:
 # Create symlinks using Stow
 install:
 	@echo "Creating symlinks..."
-	@stow .
+	@stow --target=$(HOME)/.config configs
+	@stow --target=$(HOME)/. home
