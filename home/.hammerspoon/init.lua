@@ -6,25 +6,20 @@ end)
 
 local function openApp(name)
     local app = hs.application.get(name)
-    
+
     hs.application.launchOrFocus(name)
 
     if app:allWindows() == 0 then
-        app:activate()
         app.newWindow()
     end
 end
 
-local function openSafari()
-    openApp("Safari")
-end
-local function openChrome()
-    openApp("Google Chrome")
-end
-local function openTerminal()
-    openApp("Ghostty")
+local function bindApp(mods, key, appName)
+    hs.hotkey.bind(mods, key, function()
+        openApp(appName)
+    end)
 end
 
-hs.hotkey.bind({"alt"}, "S", openSafari)
-hs.hotkey.bind({"alt"}, "C", openChrome)
-hs.hotkey.bind({"alt"}, "T", openTerminal)
+bindApp({"alt"}, "s", "Safari")
+bindApp({"alt"}, "c", "Google Chrome")
+bindApp({"alt"}, "t", "Ghostty")
